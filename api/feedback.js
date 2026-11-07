@@ -78,11 +78,18 @@ module.exports = async function handler(req, res) {
         });
 
         if (!resendResponse.ok) {
+            const providerError = await resendResponse.json().catch(() => null);
+            console.error('Resend rejected feedback email', {
+                status: resendResponse.status,
+                code: providerError?.name || providerError?.code || 'unknown',
+                message: providerError?.message || 'No error details returned.'
+            });
             return res.status(502).json({ error: 'Could not send your message right now. Please try again later.' });
         }
 
         return res.status(200).json({ message: 'Thanks for your message. It has been sent.' });
-    } catch {
+    } catch (error) {
+        console.error('Resend feedback request failed', error instanceof Error ? error.message : 'Unknown error');
         return res.status(502).json({ error: 'Could not send your message right now. Please try again later.' });
     }
 };
