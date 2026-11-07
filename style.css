@@ -476,7 +476,8 @@ nav .fa{
  
  @media(max-width: 700px){
      #places,
-     #hidden-gems{
+     #hidden-gems,
+     #contact{
          scroll-margin-top: 90px;
      }
      .row{
