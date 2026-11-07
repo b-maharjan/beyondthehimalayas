@@ -401,6 +401,10 @@ nav .fa{
     }
 }
 
+ #places,
+ #hidden-gems{
+     scroll-margin-top: 120px;
+ }
  .places{
      width: 90%;
      margin: auto;
@@ -471,6 +475,10 @@ nav .fa{
  }
  
  @media(max-width: 700px){
+     #places,
+     #hidden-gems{
+         scroll-margin-top: 90px;
+     }
      .row{
          flex-direction: column;
      }
