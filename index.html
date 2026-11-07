@@ -34,6 +34,7 @@
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="#places">PLACES</a></li>
+                    <li><a href="#hidden-gems">HIDDEN GEMS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
@@ -96,7 +97,7 @@
 
     
     <section class="places" id="places">
-        <h2>Places To Visit</h2>
+        <h2 class="section-heading">Places To Visit</h2>
         <p>Nepal brings together high mountains, subtropical forests, lakes, and historic cities. Trek in the Himalayas, explore wildlife parks, or discover cultural centers such as Kathmandu, Pokhara, and Lumbini. Spring and autumn are popular seasons for travel.</p>
         <div class="row">
             <div class="places-col">
@@ -136,6 +137,78 @@
         </div>
     </section>
 
+    <section class="hidden-gems" id="hidden-gems">
+        <h2 class="section-heading">Hidden Gems of Nepal</h2>
+        <div class="hidden-gems-grid">
+            <details class="hidden-gems-region" open>
+                <summary>Koshi Province <span class="hidden-gems-region-label">East Nepal</span></summary>
+                <ul class="hidden-gems-list">
+                    <li>Ilam</li>
+                    <li>Kanyam</li>
+                    <li>Mai Pokhari</li>
+                    <li>Pikey Peak</li>
+                    <li>Koshi Tappu Wildlife Reserve</li>
+                    <li>Tinjure-Milke-Jaljale</li>
+                </ul>
+            </details>
+            <details class="hidden-gems-region">
+                <summary>Bagmati Province <span class="hidden-gems-region-label">Central Nepal</span></summary>
+                <ul class="hidden-gems-list">
+                    <li>Dhulikhel</li>
+                    <li>Kalinchowk</li>
+                    <li>Sailung</li>
+                    <li>Panch Pokhari</li>
+                    <li>Langtang National Park</li>
+                    <li>Gosaikunda</li>
+                    <li>Blyangje Waterfall</li>
+                    <li>Chilaune Gaun Jharana</li>
+                    <li>Bishnudwar Waterfall</li>
+                    <li>Itum Baha</li>
+                    <li>Te Bahal</li>
+                    <li>Hiranya Varna Mahavihar (Golden Temple), Patan</li>
+                </ul>
+            </details>
+            <details class="hidden-gems-region">
+                <summary>Gandaki Province <span class="hidden-gems-region-label">West-central Nepal</span></summary>
+                <ul class="hidden-gems-list">
+                    <li>Bandipur</li>
+                    <li>Gorkha</li>
+                    <li>Sikles Village</li>
+                    <li>Kapuche Lake</li>
+                    <li>Tsum Valley</li>
+                    <li>Khopra Danda</li>
+                    <li>Marpha</li>
+                    <li>Kagbeni</li>
+                </ul>
+            </details>
+            <details class="hidden-gems-region">
+                <summary>Lumbini Province <span class="hidden-gems-region-label">West Nepal</span></summary>
+                <ul class="hidden-gems-list">
+                    <li>Tansen</li>
+                    <li>Bardiya National Park</li>
+                    <li>Rani Mahal</li>
+                    <li>Tilaurakot-Kapilavastu</li>
+                </ul>
+            </details>
+            <details class="hidden-gems-region">
+                <summary>Karnali Province <span class="hidden-gems-region-label">Northwest Nepal</span></summary>
+                <ul class="hidden-gems-list">
+                    <li>Rara Lake</li>
+                    <li>Sinja Valley</li>
+                    <li>Upper Dolpo</li>
+                </ul>
+            </details>
+            <details class="hidden-gems-region">
+                <summary>Sudurpashchim Province <span class="hidden-gems-region-label">Far-western Nepal</span></summary>
+                <ul class="hidden-gems-list">
+                    <li>Khaptad National Park</li>
+                    <li>Badimalika Temple</li>
+                    <li>Shuklaphanta National Park</li>
+                    <li>Ghodaghodi Lake</li>
+                </ul>
+            </details>
+        </div>
+    </section>
 
     <section class="visit">
         <h4>Things To Know Before Visiting Nepal</h4>
@@ -165,7 +238,7 @@
     </section>
 
     <section class="culture">
-        <h5>Cultures</h5>
+        <h2 class="section-heading">Cultures</h2>
         <p>Nepal’s culture blends Hindu and Buddhist traditions with many regional customs. Experience this diversity through festivals, temples, and everyday etiquette. At sacred sites, remove your shoes and walk clockwise around stupas.</p>
             <div class="row">
                 <div class="culture-col">
@@ -187,7 +260,7 @@
     
         </section>
     <section class="language">
-        <h6>Language</h6>
+        <h2 class="section-heading">Language</h2>
         <p>Nepali is Nepal’s official language, while many communities also speak local languages. English is common in tourism centers and trekking areas. Namaste is a polite greeting, and dhanyavad means “thank you.”</p>
             <div class="row">
                 <div class="language-col">
@@ -217,7 +290,38 @@
 
 
         <section class="contact" id="contact">
-            <h4>Contact Us<br>blog/maharjanbijay</h4>
+            <h2 class="section-heading">Contact Us</h2>
+            <p class="contact-intro">Planning a visit or have a question? Follow along for Nepal travel tips, destination ideas, and local stories.</p>
+            <p class="contact-handle">blog/maharjanbijay</p>
+
+            <div class="feedback-box">
+                <h3 id="feedback-title">Send a message</h3>
+                <p>Have a suggestion, feedback, or question? Let me know.</p>
+                <form id="feedback-form">
+                    <div class="feedback-fields">
+                        <label for="feedback-topic">Topic
+                            <select id="feedback-topic" name="topic" required>
+                                <option value="Question">Question</option>
+                                <option value="Suggestion">Suggestion</option>
+                                <option value="Feedback">Feedback</option>
+                            </select>
+                        </label>
+                        <label for="feedback-email">Email (optional)
+                            <input id="feedback-email" name="email" type="email" maxlength="254" autocomplete="email">
+                        </label>
+                    </div>
+                    <label class="feedback-message-label" for="feedback-message">Message
+                        <textarea id="feedback-message" name="message" rows="5" minlength="3" maxlength="2000" required></textarea>
+                    </label>
+                    <div class="feedback-trap" aria-hidden="true">
+                        <label for="feedback-website">Leave this field empty
+                            <input id="feedback-website" name="website" type="text" tabindex="-1" autocomplete="off">
+                        </label>
+                    </div>
+                    <button class="feedback-submit" type="submit">Send message</button>
+                    <p class="feedback-status" id="feedback-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
             
                 <div class="contact-col">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -233,7 +337,6 @@
                         <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"/>
                       </svg>
                 </div>
-            </div>
         </section>
 
 
@@ -342,6 +445,37 @@
 
                 window.addEventListener('scroll', updateContactBar, { passive: true });
                 updateContactBar();
+            })();
+            (function () {
+                const form = document.getElementById('feedback-form');
+                const status = document.getElementById('feedback-status');
+                const submitButton = form.querySelector('.feedback-submit');
+
+                form.addEventListener('submit', async function (event) {
+                    event.preventDefault();
+                    submitButton.disabled = true;
+                    status.textContent = 'Sending...';
+
+                    try {
+                        const response = await fetch('/api/feedback', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(Object.fromEntries(new FormData(form)))
+                        });
+                        const result = await response.json();
+
+                        if (!response.ok) {
+                            throw new Error(result.error || 'Could not send your message. Please try again later.');
+                        }
+
+                        form.reset();
+                        status.textContent = result.message;
+                    } catch (error) {
+                        status.textContent = error.message || 'Could not send your message. Please try again later.';
+                    } finally {
+                        submitButton.disabled = false;
+                    }
+                });
             })();
     </script>
 </body>
